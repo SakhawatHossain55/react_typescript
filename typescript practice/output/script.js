@@ -99,19 +99,94 @@
 //     }
 // }
 // console.log(calculaton(5, 6, 'minus'));
-var Player = /** @class */ (function () {
-    function Player(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.current = c;
-    }
-    Player.prototype.play = function () {
-        console.log(this.name + " from " + this.current + " is playing");
-    };
-    return Player;
-}());
-var mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
-var shakib = new Player('Shakib', 35, 'Bangladesh');
-var players = [];
-players.push(shakib);
-players.push(mashrafi);
+// class Player {
+//     name: string;
+//     age: number;
+//     current: string;
+//     constructor(n: string, a: number, c: string) {
+//         this.name = n;
+//         this.age = a;
+//         this.current = c;
+//     }
+//     play() {
+//         console.log(`${this.name} from ${this.current} is playing`);
+//     }
+// }
+// const mashrafi = new Player('Mashrafi', 40, 'Bangladesh')
+// const shakib = new Player('Shakib', 35, 'Bangladesh')
+// const players:  Player[] = []
+// players.push(shakib)
+// players.push(mashrafi)
+// import { Player } from './classes/Player.js'
+// const mashrafi = new Player('Mashrafi', 40, 'Bangladesh')
+// const shakib = new Player('Shakib', 35, 'Bangladesh')
+// console.log(shakib.age);
+// console.log(shakib.country);
+// const players:  Player[] = []
+// players.push(shakib)
+// players.push(mashrafi)
+// interface RatangleOptions {
+//     width: number;
+//     length: number;
+// }
+// function drawRectangle(optons: RatangleOptions) {
+//     let width = optons.width;
+//     let length = optons.length;
+// }
+// let threeDdoptions = {
+//     width: 30,
+//     length: 20,
+//     height: 10
+// }
+// drawRectangle(threeDdoptions)
+// import { IsPlayer } from './interfaces/IsPlayer.js';
+// import { Player } from './classes/Player.js'
+// const mashrafi = new Player('Mashrafi', 40, 'Bangladesh')
+// let shakib: IsPlayer;
+// shakib = new Player('Shakib', 35, 'Bangladesh')
+// const players:  Player[] = []
+// players.push(shakib)
+// players.push(mashrafi)
+// //GENERICS
+// const addID = <T extends {
+//     name: string;
+//     age: number;
+// }>(obj: T) => {
+//     let id = Math.floor(Math.random() * 100);
+//     return {...obj, id}
+// };
+// let user = addID({
+//     name: "Masharafi",
+//     age: 40,
+//     country: "Bangladesh"
+// })
+// addID(user)
+// interface APIResponse<T> {
+//     status: number;
+//     type: string;
+//     data: T;
+// }
+// const response1: APIResponse<string> = {
+//     status: 200,
+//     type: "good",
+//     data: "test"
+// }
+// // ENUM
+// enum RType {SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN};
+// interface APIResponse<T> {
+//     status: number;
+//     type: RType;
+//     data: T;
+// }
+// const response1: APIResponse<string> = {
+//     status: 200,
+//     type: RType.SUCCESS,
+//     data: "test"
+// }
+// console.log(response1);
+// // TUOLES
+// let a = [3, 'hello', {p: 3}];
+// // right
+// let b:[number, string, object] = [4, 'World', {t:1}]
+// // rong
+// b[1] = 4
