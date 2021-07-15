@@ -1,9 +1,9 @@
 "use strict";
-// ** What is TypeScript?
-// Supperset of JavaScript created by Microsoft
-// Extra features - interfaces, enums, temples, generics
-// supperts moder features (arrow functions, let, const)
-// Based on the .NET harmony specification 
+// // ** What is TypeScript?
+// // Supperset of JavaScript created by Microsoft
+// // Extra features - interfaces, enums, temples, generics
+// // supperts moder features (arrow functions, let, const)
+// // Based on the .NET harmony specification 
 // let playerMane;
 // playerMane = "Mashrafi"
 // playerMane = 15;
@@ -12,7 +12,7 @@
 //     return a * b;
 // }
 // console.log(multiply(3,4));
-// array
+// // array
 // let mixed = ['apple', 3, true, {}]
 // mixed.push({
 //     name: 'Shakib'
