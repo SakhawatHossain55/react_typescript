@@ -26,7 +26,7 @@ const getProducts = async (): Promise<CartItemType[]> =>
   await (await fetch('https://fakestoreapi.com/products')).json();
 
 
-const App = () => {
+const App = () => { 
   const [cartOpen, setCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([] as CartItemType[])
   const {data, isLoading, error} = useQuery<CartItemType[]>('Products', getProducts);

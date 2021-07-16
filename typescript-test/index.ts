@@ -1,3 +1,7 @@
+// TypeScript is an open-source language that builds on JavaScript, one of the world’s most used tools, by adding static type definitions.
+
+// What is typescript? ==> TypeScript is a suppersuperset of JavaScritp, it's adds optional static typeing to the language.
+
 // Any, number, string,, boolean,, object, array, tuple, enum, undefined, null, void, never, unknown
 
 let myName: string = "Sakhawat Hossain";
