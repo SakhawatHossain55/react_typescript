@@ -1,1 +1,2 @@
-var myName = 'Sakhawat Hossain';
+"use strict";
+const myName = 'Sakhawat Hossain';
