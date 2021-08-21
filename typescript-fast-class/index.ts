@@ -99,15 +99,30 @@
 // })
 
 
-enum Week {
-    Sat = 'Sun',
-    Sun = 'Sun',
-    Mon = 'Mon',
-    Tue = 'Tue',
-    Wed = 'Wed',
-    Thr = 'Thr',
-    Fri = 'Fri',
-}
+// enum Week {
+//     Sat = 'Sun',
+//     Sun = 'Sun',
+//     Mon = 'Mon',
+//     Tue = 'Tue',
+//     Wed = 'Wed',
+//     Thr = 'Thr',
+//     Fri = 'Fri',
+// }
 
-console.log(Week.Mon);
+// console.log(Week.Mon);
+
+
+
+//////////////////////////////////////////////////////////////// second taime practch
+
+// // Any, number, string,, boolean,, object, array, tuple, enum, undefined, null, void, never, unknown
+
+
+const myName: string = "Sakhawat Hossain";
+
+const age: number = 21;
+
+const isHungry: boolean = false;
+
+const studentId: number | string = 371
 
