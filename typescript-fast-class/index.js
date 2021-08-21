@@ -41,7 +41,7 @@
 //     hobby : 'chatting'
 // }
 // // Array
-// const numbers: (number | string)[] = [1, 2, 3, 4, 5] 
+// const numbers: (number | string)[] = [1, 2, 3, 4, 5]
 // const persons: object[] = [
 //     {
 //         name: "Solaimen Shadin",
@@ -73,14 +73,77 @@
 //     age : 36,
 //     hobby: "Solaimen"
 // })
-var Week;
-(function (Week) {
-    Week["Sat"] = "Sun";
-    Week["Sun"] = "Sun";
-    Week["Mon"] = "Mon";
-    Week["Tue"] = "Tue";
-    Week["Wed"] = "Wed";
-    Week["Thr"] = "Thr";
-    Week["Fri"] = "Fri";
-})(Week || (Week = {}));
-console.log(Week.Mon);
+// enum Week {
+//     Sat = 'Sun',
+//     Sun = 'Sun',
+//     Mon = 'Mon',
+//     Tue = 'Tue',
+//     Wed = 'Wed',
+//     Thr = 'Thr',
+//     Fri = 'Fri',
+// }
+// console.log(Week.Mon);
+////////////////////////////////////////// second taime practch
+// // Any, number, string,, boolean,, object, array, tuple, enum, undefined, null, void, never, unknown
+var myName = "Sakhawat Hossain";
+var age = 21;
+var isHungry = false;
+var studentId = 371;
+studentId = "student";
+studentId = 371;
+var person = {
+    name: "Sakhawat Hossain",
+    age: 21,
+    hobby: "Sleeping",
+};
+var person2 = {
+    name: "Oishani Hossain",
+    age: 21,
+    hobby: "Sleeping",
+};
+var person3 = {
+    name: "Oishani Hossain",
+    age: 21,
+    hobby: "Sleeping",
+};
+var person4 = {
+    name: "Oishani Hossain",
+    age: 21,
+};
+// Array
+var number = [52, 45, 63, 52];
+var number2 = [52, 45, 63, 52, "Hello"];
+var persons = [
+    {
+        name: "Oishani Hossain",
+        age: 21,
+        hobby: "Sleeping",
+    },
+];
+var persons2 = [
+    {
+        name: "Oishani Hossain",
+        age: 21,
+        hobby: "Sleeping",
+    },
+    {
+        name: "Oishani Hossain",
+        age: 21,
+        hobby: "Sleeping",
+    },
+];
+var greetings = function (name) {
+    console.log("Hello " + name);
+};
+greetings("Oishee");
+var add = function (a, b) {
+    return a + b;
+};
+var introduce = function (person) {
+    console.log("Hello my name is " + person.name + " I am " + person.age);
+};
+introduce({
+    name: "Oishani Hossain",
+    age: 21,
+    hobby: "Sleeping",
+});

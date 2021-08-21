@@ -34,8 +34,6 @@
 //     hobby : 'chatting'
 // }
 
-
-
 // interface Preson {
 //     name: string;
 //     age: number;
@@ -54,11 +52,9 @@
 //     hobby : 'chatting'
 // }
 
-
 // // Array
 
-
-// const numbers: (number | string)[] = [1, 2, 3, 4, 5] 
+// const numbers: (number | string)[] = [1, 2, 3, 4, 5]
 // const persons: object[] = [
 //     {
 //         name: "Solaimen Shadin",
@@ -81,11 +77,10 @@
 
 // const greeting = (name: string): void => {
 //     console.log(`Hello ${name}`);
-    
+
 // }
 
 // greeting("Shadin")
-
 
 // const introduce = (person: Preson): void => {
 //     console.log(`Helllo my name is ${person.name
@@ -97,7 +92,6 @@
 //     age : 36,
 //     hobby: "Solaimen"
 // })
-
 
 // enum Week {
 //     Sat = 'Sun',
@@ -111,12 +105,9 @@
 
 // console.log(Week.Mon);
 
-
-
 ////////////////////////////////////////// second taime practch
 
 // // Any, number, string,, boolean,, object, array, tuple, enum, undefined, null, void, never, unknown
-
 
 const myName: string = "Sakhawat Hossain";
 
@@ -124,24 +115,95 @@ const age: number = 21;
 
 const isHungry: boolean = false;
 
-type StringOrNumber = number | string 
+type StringOrNumber = number | string;
 
 let studentId: StringOrNumber = 371;
-studentId = "student"
-studentId = 371
+studentId = "student";
+studentId = 371;
 
+let person: { name: string; age: number; hobby: string } = {
+  name: "Sakhawat Hossain",
+  age: 21,
+  hobby: "Sleeping",
+};
 
-let person: {name: string, age: number, hobby: string} = {
-    name: "Sakhawat Hossain",
-    age: 21,
-    hobby: "Sleeping",
-}
-
-type PersonType = {name: string, age: number, hobby: string}
+type PersonType = { name: string; age: number; hobby: string };
 
 let person2: PersonType = {
+  name: "Oishani Hossain",
+  age: 21,
+  hobby: "Sleeping",
+};
+
+interface Person3 {
+  name: string;
+  age: number;
+  hobby: string;
+}
+
+let person3: Person3 = {
+  name: "Oishani Hossain",
+  age: 21,
+  hobby: "Sleeping",
+};
+
+interface Person4 {
+  name: string;
+  age: number;
+  hobby?: string;
+}
+
+let person4: Person4 = {
+  name: "Oishani Hossain",
+  age: 21,
+};
+
+// Array
+
+const number: number[] = [52, 45, 63, 52];
+
+const number2: (number | string)[] = [52, 45, 63, 52, "Hello"];
+
+const persons: object[] = [
+  {
     name: "Oishani Hossain",
     age: 21,
     hobby: "Sleeping",
+  },
+];
+
+const persons2: Person3[] = [
+    {
+      name: "Oishani Hossain",
+      age: 21,
+      hobby: "Sleeping",
+    },
+    {
+      name: "Oishani Hossain",
+      age: 21,
+      hobby: "Sleeping",
+    },
+  ];
+
+
+const greetings = (name: string) : void => {
+    console.log(`Hello ${name}`);
 }
+
+greetings("Oishee")
+
+const add = (a: number, b: number): number => {
+    return a + b;
+}
+
+const introduce = (person: Person4): void => {
+    console.log(`Hello my name is ${person.name} I am ${person.age}`);
+    
+}
+  
+introduce({
+    name: "Oishani Hossain",
+    age: 21,
+    hobby: "Sleeping",
+  },)
 
