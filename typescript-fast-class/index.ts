@@ -113,7 +113,7 @@
 
 
 
-//////////////////////////////////////////////////////////////// second taime practch
+////////////////////////////////////////// second taime practch
 
 // // Any, number, string,, boolean,, object, array, tuple, enum, undefined, null, void, never, unknown
 
@@ -124,5 +124,24 @@ const age: number = 21;
 
 const isHungry: boolean = false;
 
-const studentId: number | string = 371
+type StringOrNumber = number | string 
+
+let studentId: StringOrNumber = 371;
+studentId = "student"
+studentId = 371
+
+
+let person: {name: string, age: number, hobby: string} = {
+    name: "Sakhawat Hossain",
+    age: 21,
+    hobby: "Sleeping",
+}
+
+type PersonType = {name: string, age: number, hobby: string}
+
+let person2: PersonType = {
+    name: "Oishani Hossain",
+    age: 21,
+    hobby: "Sleeping",
+}
 
