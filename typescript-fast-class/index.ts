@@ -207,3 +207,18 @@ introduce({
     hobby: "Sleeping",
   },)
 
+// const getArray = (arr: string[]): string[] => {
+//   return arr
+// }
+
+// getArray(['45678', '7898798'])
+
+const getArray2 = <T>(arr: T[]): T[] => {
+  return arr
+}
+
+getArray2<string>(['45678', '7898798'])
+getArray2<number>([45678, 7898798])
+
+
+
